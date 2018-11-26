@@ -17,8 +17,8 @@
 			margin: 0;
 		}
 		#map {
-			width: 700px;
-			height: 800px;
+			width: 600px;
+			height: 700px;
 		}
 	</style>
 
@@ -44,6 +44,7 @@
 
 	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
 	    satellite   = L.tileLayer(mbUrl, {id: 'mapbox.satellite', attribution: mbAttr}),
+	    high-contrast   = L.tileLayer(mbUrl, {id: 'mapbox.high-contrast', attribution: mbAttr}),
 		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
 
 	var map = L.map('map', {
@@ -55,6 +56,7 @@
 	var baseLayers = {
 		"Grayscale": grayscale,
 		"Satellite": satellite,
+		"High-Contrast": high-contrast,
 		"Streets": streets
 	};
 
